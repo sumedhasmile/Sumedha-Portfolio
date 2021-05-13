@@ -1,0 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300;500&display=swap');
+
+
+:root{
+  --primary-white: #fff;
+  --primary-orange: rgb(212, 117, 8);
+  --primary-dark: rgb(255, 255, 255, 0);
+  --primary-red: rgb(243, 90, 30);
+  --primary-hover-red: #f33501;
+}
+/**********************NAVBAR****************************/
+
+.logo{
+  width: 2.25rem;
+}
+
+@media(max-width:768px)
+{
+  .navbar {
+    width: 7rem;
+  }
+}
+
+.navlink:hover{
+  border-top: 0.187rem solid var(--primary-orange) ;
+
+}
+
+
+
+
+/*************Header*******************/
+
+.header-wraper{
+  position: relative;
+  background: url(./assets/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+}
+.main-info{
+  position: absolute ;
+  display: flex;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed" sans-serif;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+  
+}
+
+
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+@media(max-width:768px){
+  .main-info h1{
+    font-size: 1.7rem !important;
+  }
+}
+
+.typed-text{
+  font-size: 1.3rem !important;
+}
+.button-main{
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0rem;
+  padding: 0.65rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+
+}
+.button-main:hover{
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+}
+
+/**********PARTICLES JS***********/
+.tsparticles-canvas-el{
+  position:absolute;
+  height: 100vh;
+  z-index: 1;
+
+}
+
+@media(max-width:768px){
+  .particles-canvas{
+    display: none;
+  }
+}
+
+
+/***********About page **************/
+.about { 
+
+  font-size: 1.1em;
+  background: rgb(233, 213, 213);
+  animation: mymove 5s infinite;
+  height: 150vh;
+}
+
+@keyframes mymove {
+  50% {background-color: rgb(157, 194, 224);}
+}
+
+.profile {
+  width: 15rem;
+}
+
+.my-details {
+  background-color: rgba(255, 255, 255, 0.747);
+}
+
+/******Skills Page**********/
+
+.focus {
+  transition: transform 0.3s;
+}
+
+.focus:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.image-style {
+  width: 3rem;
+}
+
+.font-details {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #231d5af8;
+}
+
+.font-details-b {
+  font-size: 3em;
+  font-weight: 500;
+  color: #ffffff;
+}
+#skills{
+  background-color: rgba(22, 164, 207, 0.877);
+}
+
+
+/************ Project Page********/
+
+#main  {
+  cursor: pointer;
+  display: inline-block;
+ 
+  text-decoration: none;
+  font-size: 0.875rem;
+  background-color: rebeccapurple;
+  border: none;
+  border: radius 0.25em;
+
+  padding: 0.625rem;
+  color: #fff;
+}
+
+.list-styles {
+  list-style-type: circle;
+}
+
+.image-style1 {
+  width: 3rem;
+}
+
+#projects{
+  background-color: rgb(71, 139, 194);
+}
+ul{
+  text-align: left;
+}
+
+
+
+
+/*****Contact page **********/
+
+
+
+#contact{
+  background-color: rgb(13, 13, 14);
+
+}
+
+
+
+
+/******Footer *******/
+.footer-style {
+  background-color: #101018f8;
+  
+  font-size: 1.5em;
+  border: 0.13rem solid #101018f8;
+  border-top-left-radius: 0.19rem;
+}
